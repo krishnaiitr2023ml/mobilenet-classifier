@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MobileNetV2 Classifier</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<main class="page">
+<section class="card">
+<div class="badge">AI Image Classification</div>
+<h1>MobileNetV2 Classifier</h1>
+<p class="subtitle">Upload an image and get the top predictions from the deployed model.</p>
+<form id="uploadForm">
+<label class="drop-zone" for="imageFile">
+<input id="imageFile" type="file" accept="image/*" required>
+<span class="drop-title">Choose an image</span>
+<span class="drop-help">JPG, JPEG, PNG or WEBP · Max 10 MB</span>
+</label>
+<div id="previewWrap" class="preview-wrap hidden">
+<img id="preview" alt="Image preview">
+</div>
+<button id="submitButton" type="submit">Classify Image</button>
+</form>
+<div id="status" class="status"></div>
+<div id="result" class="result hidden"></div>
+</section>
+</main>
+<script src="/js/script.js"></script>
+</body>
+</html>
