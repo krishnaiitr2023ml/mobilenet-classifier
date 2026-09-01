@@ -1,1 +1,137 @@
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f5f9;
+    color: #152033;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+.card {
+    width: 100%;
+    max-width: 650px;
+    background: white;
+    padding: 38px;
+    border-radius: 22px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.10);
+}
+
+.badge {
+    display: inline-block;
+    background: #edf3ff;
+    color: #2862d7;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 20px 0 10px;
+}
+
+.subtitle {
+    color: #69758d;
+    margin-bottom: 30px;
+}
+
+.drop-zone {
+    min-height: 190px;
+    border: 2px dashed #cad6ea;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.drop-zone input {
+    display: none;
+}
+
+.drop-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.drop-help {
+    margin-top: 10px;
+    color: #7a879f;
+}
+
+.preview-wrap {
+    margin-top: 22px;
+    background: #f5f7fa;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.preview-wrap img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: contain;
+    display: block;
+}
+
+button {
+    width: 100%;
+    margin-top: 22px;
+    padding: 15px;
+    border: 0;
+    border-radius: 12px;
+    background: #172238;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.6;
+}
+
+.status {
+    margin-top: 20px;
+    color: #b42318;
+}
+
+.result {
+    margin-top: 25px;
+    border-top: 1px solid #e7ebf0;
+    padding-top: 20px;
+}
+
+.prediction {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eef1f5;
+}
+
+.class-name {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.confidence {
+    color: #2862d7;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
