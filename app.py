@@ -587,7 +587,7 @@ async def predict(file: UploadFile = File(...)):
             results.append(
                 {
                     "class_id": class_id,
-                    "label": label.replace("_", " "),
+                    "class": label.replace("_", " "),
                     "confidence": round(float(probability) * 100, 2),
                 }
             )
